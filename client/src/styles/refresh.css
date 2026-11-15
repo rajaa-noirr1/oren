@@ -123,7 +123,8 @@ button.chip[aria-pressed='true'] .area-ico { color: inherit; }
 .hcard { box-shadow: 5px 5px 0 var(--hard), 0 30px 60px -34px rgba(13, 15, 20, 0.55); }
 .coin { box-shadow: 0 0 0 7px color-mix(in srgb, var(--teach) 22%, transparent), 0 10px 22px -8px rgba(13, 15, 20, 0.45); }
 .coin-want { box-shadow: 0 0 0 7px color-mix(in srgb, var(--want) 24%, transparent), 0 10px 22px -8px rgba(13, 15, 20, 0.45); }
-.hero-ribbon { box-shadow: var(--soft); }
+.hero-ribbon { box-shadow: var(--soft); width: max-content; }
+.hero-ribbon > * { flex: none; }
 
 /* Sections */
 .section-alt { position: relative; background: color-mix(in srgb, var(--bg-2) 82%, transparent); border-block: 1px solid var(--line); }
@@ -219,7 +220,7 @@ button.chip[aria-pressed='true'] .area-ico { color: inherit; }
 
 /* "Perfect swap": the most important label on a card. A yellow highlighter badge with dark text and a slow shine,
    readable on the dark card footers of the light theme and the light ones of the dark theme. */
-.pbadge { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px 5px 8px; border-radius: 999px; background: #FFE14D; color: #14120A; border: 1.5px solid #14120A; font: 750 12.5px/1 var(--body); letter-spacing: 0; text-transform: none; white-space: nowrap; box-shadow: 0 0 0 3px rgba(255, 225, 77, 0.22), 0 6px 18px -6px rgba(255, 196, 0, 0.75); }
+.pbadge { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; flex: none; align-items: center; gap: 6px; padding: 5px 11px 5px 8px; border-radius: 999px; background: #FFE14D; color: #14120A; border: 1.5px solid #14120A; font: 750 12.5px/1 var(--body); letter-spacing: 0; text-transform: none; white-space: nowrap; box-shadow: 0 0 0 3px rgba(255, 225, 77, 0.22), 0 6px 18px -6px rgba(255, 196, 0, 0.75); }
 .pbadge svg { flex: none; color: #14120A; }
 .pbadge::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.85) 48%, transparent 64%); transform: translateX(-130%); animation: pbadge-shine 4.2s ease-in-out infinite; }
 @keyframes pbadge-shine { 0%, 62% { transform: translateX(-130%); } 88%, 100% { transform: translateX(130%); } }

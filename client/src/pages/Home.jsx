@@ -128,30 +128,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how" className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <p className="eyebrow">How a swap works</p>
-            <h2>Three steps from stranger to study partner.</h2>
-          </div>
-          <ol className="steps">
-            <li className="step">
-              <StepCard />
-              <div className="step-text"><span className="step-n mono">01</span><h3>Build your card</h3><p className="muted">List what you can teach, what you want to learn, your education and when you are free. Your profile becomes a trading card.</p></div>
-            </li>
-            <li className="step">
-              <StepSwipe />
-              <div className="step-text"><span className="step-n mono">02</span><h3>Swipe for a fair trade</h3><p className="muted">Explore shows people whose skills fit yours. Swipe right to offer a swap. When you both swipe right, it is a match.</p></div>
-            </li>
-            <li className="step">
-              <StepTicket />
-              <div className="step-text"><span className="step-n mono">03</span><h3>Teach each other</h3><p className="muted">Plan a session in chat. You each teach for the same time, then write down what you learned. It grows on your skill tree.</p></div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="fields" className="section section-alt">
+      <section id="fields" className="section">
         <div className="wrap">
           <div className="section-head row-head">
             <div>
@@ -180,6 +157,29 @@ export default function Home() {
               </section>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="how" className="section section-alt">
+        <div className="wrap">
+          <div className="section-head">
+            <p className="eyebrow">How a swap works</p>
+            <h2>Three steps from stranger to study partner.</h2>
+          </div>
+          <ol className="steps">
+            <li className="step">
+              <StepCard />
+              <div className="step-text"><span className="step-n mono">01</span><h3>Build your card</h3><p className="muted">List what you can teach, what you want to learn, your education and when you are free. Your profile becomes a trading card.</p></div>
+            </li>
+            <li className="step">
+              <StepSwipe />
+              <div className="step-text"><span className="step-n mono">02</span><h3>Swipe for a fair trade</h3><p className="muted">Explore shows people whose skills fit yours. Swipe right to offer a swap. When you both swipe right, it is a match.</p></div>
+            </li>
+            <li className="step">
+              <StepTicket />
+              <div className="step-text"><span className="step-n mono">03</span><h3>Teach each other</h3><p className="muted">Plan a session in chat. You each teach for the same time, then write down what you learned. It grows on your skill tree.</p></div>
+            </li>
+          </ol>
         </div>
       </section>
 
