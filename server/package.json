@@ -1,0 +1,22 @@
+{
+  "name": "oren-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OREN API: Express on PostgreSQL, raw SQL",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/index.js",
+    "start": "node --env-file=.env src/index.js",
+    "db:seed:build": "node scripts/build-seed.mjs",
+    "db:reset": "node --env-file=.env scripts/db-reset.mjs",
+    "test": "node --env-file=.env --test test/*.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "express": "4.21.2",
+    "pg": "8.13.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.2"
+  }
+}

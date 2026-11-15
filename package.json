@@ -1,0 +1,13 @@
+{
+  "name": "oren",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OREN: a skill-for-skill exchange. React website (client/) and Express + PostgreSQL API (server/).",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "db:reset": "npm --prefix server run db:reset",
+    "test": "npm --prefix server test",
+    "deploy:pages": "node scripts/deploy-pages.mjs"
+  }
+}
